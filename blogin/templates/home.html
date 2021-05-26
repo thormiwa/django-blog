@@ -3,12 +3,17 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
+<div class="pace">
 {% if user.is_authenticated %}
-  <p class="user-name">Hi {{ user.username }}!</p>
-  <p class="log-out"><a href="{% url 'logout' %}">Log Out</a></p>
+    <p>Hi {{ user.username }}! Tomiwa loves you</p>
+  <button><a href="{% url 'logout' %}">Log Out</a></button>
+</div>
+<div class="main">
 {% else %}
+<h1>Welcome</h1>
   <p>You are not logged in</p>
-  <button><a href="{% url 'login' %}">Log In</a> |</button>
+  <button><a href="{% url 'login' %}">Log In</a></button>
   <button><a href="{% url 'signup' %}">Sign Up</a></button>
 {% endif %}
+</div>
 {% endblock %}
