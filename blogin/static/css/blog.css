@@ -6,7 +6,7 @@ body{
 }
 
 form{
-    width: 100%;  
+    max-width: 100%;  
     color: aliceblue;
     overflow: hidden;  
     margin: auto;  
