@@ -6,7 +6,7 @@ body{
 }
 
 form{
-    width: 500px;  
+    width: 100%;  
     color: aliceblue;
     overflow: hidden;  
     margin: auto;  
@@ -18,10 +18,10 @@ form{
 }
 
 input[type=text], input[type=password], input[type=email] {
-    width: 100%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
-    display: block;
+    display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
